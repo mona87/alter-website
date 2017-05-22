@@ -1,0 +1,42 @@
+#sec5 {
+  position: relative;
+  padding: vw(px, 95, 130, 45, 130);
+
+  @include bp1 {
+    padding: vw(bp1, 100, 0, 150, 0);
+  }
+  @include bp2 {
+    padding: vw(bp2, 135, 0, 80, 0);
+  }
+
+  img {
+    width: vw(px, 635);
+    float: left;
+    margin-left: -3vw;
+
+    @include bp1 {
+      display: block;
+      width: vw(bp1, 635) ;
+      float: none;
+      margin: 0 auto;
+
+    }
+  }
+  	.copy {
+  		width: vw(px, 379);
+  		float: right;
+  		right: vw(px, 130);
+
+    @include bp1 {
+      width: vw(bp1, 379);
+      float: none;
+      right: initial;
+      padding-top: vw(bp1, 79);
+    }
+    @include bp2 {
+      padding: vw(bp2, 50, 24);
+      width: 100%;
+    }
+  }
+
+}//sec5

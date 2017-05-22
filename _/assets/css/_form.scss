@@ -1,0 +1,143 @@
+// #altr-form {
+//  height: $px591;
+//  position: relative;
+//  background-color: $white;
+
+//  @include bp1 {
+//   height: $bp1-591;
+//  }
+// @include bp2 {
+//   height: $bp2-591;
+//  }
+
+
+//   .form-wrapper {
+//     // border: 1px solid red;
+//     text-align: center;
+//     height: $px366;
+//     width: $px273;
+//     margin: auto;
+//     position: absolute;
+//     top: 0;
+//     right: 0;
+//     left: 0;
+//     bottom: 0;
+//     display: inline-block;
+
+//     h2 {
+//       text-align: center;
+//       color: $black;
+//     }
+
+//     @include bp1 {
+//       height: $bp1-366;
+//       width: $bp1-273;
+//     }
+//     @include bp2 {
+//       height: $bp2-366;
+//       width: $bp2-273;
+//     }
+//   }
+
+//   .submit-btn {
+//     height: $px46;
+//     width: $px235;
+//     border: $px2 solid $green;
+//     border-radius: $px5;
+//     font-size: $px14;
+//     background: transparent;
+//     color: $black;
+//     margin-top: $px50;
+
+
+//     @include bp1 {
+//       height: $bp1-46;
+//       width: $bp1-253;
+//       border-radius: $bp1-5;
+//       font-size: $bp1-14;
+//       margin-top: $bp1-50;
+//       border: $bp1-2 solid $green;
+//     }
+
+//     @include bp2 {
+//       height: $bp2-46;
+//       width: $bp2-253;
+//       border-radius: $bp2-5;
+//       font-size: $bp2-14;
+//       margin-top: $bp2-50;
+//       border: $bp2-2 solid $green;
+//     }
+
+//     &:focus {
+//       outline: none;
+//     }
+
+//     &:hover {
+//       background-color: $green;
+//       color: $white;
+//     }
+//     &:active {
+//       background-color: $darkGreen;
+//       border-color: $darkGreen;
+//     }
+
+
+//   }
+
+//   input {
+//     background-color: transparent;
+//     border-top: none;
+//     border-left: none;
+//     border-right: none;
+//     border-bottom: $px2 solid $blackFade;
+//     width: $px273;
+//     font-size: $px16;
+//     margin-top: $px30;
+//     font-family: $PN-R;
+//     color: $blackFade;
+
+//     @include bp1 {
+//       border-bottom: $bp1-2 solid $blackFade;
+//       width: $bp1-273;
+//       font-size: $bp1-16;
+//       margin-top: $bp1-30;
+//     }
+
+//     @include bp2 {
+//       border-bottom: $bp2-2 solid $blackFade;
+//       width: $bp2-273;
+//       font-size: $bp2-16;
+//       margin-top: $bp2-30;
+//     }
+
+//     &:hover {
+//       border-bottom: $px2 solid $blackFade;
+//       color: $blackFade;
+
+//       @include bp1 {
+//         border-bottom: $bp1-2 solid $blackFade;
+//       }
+//       @include bp2 {
+//         border-bottom: $bp2-2 solid $blackFade;
+//       }
+//     }
+//     &:focus {
+//       border-bottom: $px2 solid $green;
+//       outline: none;
+
+//       @include bp1 {
+//         border-bottom: $bp1-2 solid $green;
+//       }
+//       @include bp2 {
+//         border-bottom: $bp2-2 solid $green;
+//       }
+//     }
+//     &:hover::placeholder {
+//       color: $blackFade;
+//     }
+
+
+//   }
+
+
+// }

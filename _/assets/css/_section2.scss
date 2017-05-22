@@ -1,0 +1,43 @@
+#sec2 {
+  position: relative;
+   padding: vw(px, 95, 130); //7.421875vw  10.15625vw
+  // padding: vw(px, 95, 130, 95); //7.421875vw 10.15625vw 7.421875vw
+  // padding: vw(px, 95, 130, 95, 130); //7.421875vw 10.15625vw 7.421875vw 10.15625vw
+  padding: vw(px, 95) vw(px,130) vw(px, 95) vw(px,130); //7.421875vw  10.15625vw  7.421875vw  10.15625vw
+
+  @include bp1 {
+    padding: vw(bp1, 100, 0);
+
+  }
+  @include bp2 {
+    padding: vw(bp2, 100, 0, 125, 0);
+  }
+
+  img {
+    width: vw(px, 592);
+    float: right;
+
+    @include bp1 {
+      display: block;
+      width: vw(bp1, 592);
+      float: none;
+      margin: 0 auto;
+
+    }
+  }
+
+  .copy {
+    float: left;
+    left: vw(px, 130);
+
+    @include bp1 {
+      float: none;
+      left: initial;
+    }
+
+    @include bp2 {
+      padding-top: vw(bp2, 50);
+    }
+  }
+
+ }//sec2

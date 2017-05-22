@@ -1,0 +1,25 @@
+.copyright {
+  opacity: 0.5;
+  font-family: $FS-R;
+  font-size: vw(px,12);
+  color: #FFFFFF;
+  letter-spacing: vw(px,.25);
+  line-height: vw(px,24);
+  width: 100%;
+  text-align: center;
+  margin-bottom: vw(px,50);
+
+  @include bp1 {
+    font-size: vw(bp1, 12);
+    letter-spacing: vw(bp1, .25);
+    line-height: vw(bp1, 24);
+    margin-bottom: vw(bp1, 50);
+  }
+
+  @include bp2 {
+    font-size: vw(bp2, 12);
+    letter-spacing: vw(bp2, .25);
+    line-height: vw(bp2, 24);
+    margin-bottom:  vw(bp2, 50);
+  }
+}

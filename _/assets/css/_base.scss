@@ -1,0 +1,157 @@
+html, html a {
+ // font-size: 1vw;
+  font-size: 100%;
+	line-height: 1.4;
+  text-shadow: vw(px, 1,5,1,1) rgba(0,0,0,0.004);
+  -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: #000;
+  color: #fafafa;
+}
+
+/* type */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  margin: 0;
+}
+
+a {
+  color: red;
+  text-decoration: none;
+}
+
+p {margin: 0;}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+/* images and SVG */
+svg {
+  width: 100%;
+  height: auto;
+  float: left;
+}
+
+img {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+
+/* helpers */
+.pos-relative {
+  position: relative;
+}
+.mobile-only {
+  display: none;
+  @include bp1 {
+    display: none !important;
+  }
+  @include bp2 {
+    display: block !important;
+  }
+
+}//mobile-only
+.non-mobile {
+  display: block;
+
+  @include bp2 {
+    display: none !important;
+  }
+
+}//non-mobile
+
+
+section {
+  &.darkOnLight {
+    color: #212121;
+    background-color: #ffffff;
+  }
+}
+
+
+.copy {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: vw(px, 379);
+
+  @include bp1 {
+    position: relative;
+    top: initial;
+    transform: none;
+    margin: 0 auto;
+    width: vw(bp1, 379);
+    float: none;
+    left: initial;
+    padding-top:  vw(bp1, 75);
+  }
+
+  @include bp2 {
+    width: 100%;
+    padding: vw(bp2, 75, 24);
+  }
+
+  h2 {
+    font-family: $PN-R;
+    font-size: vw(px, 22);
+    letter-spacing: vw(px, 4);
+    line-height: vw(px, 28);
+
+    @include bp1 {
+      font-size: vw(bp1, 22);
+      letter-spacing:vw(bp1, 4);
+      line-height:  vw(bp1, 16);
+    }
+    @include bp2 {
+      font-size:  vw(bp2, 22);
+      letter-spacing: vw(bp2, 4);
+      line-height:  vw(bp2, 28);
+    }
+
+ }//h2
+  .separator {
+    display: block;
+    width: vw(px, 25);
+    height: vw(px, 4);
+    margin: vw(px, 14, 0, 14, 0);
+    background-color: #009688;
+
+    @include bp1 {
+      width: vw(bp1, 25);
+      height: vw(bp1, 4);
+      margin: vw(bp1, 14, 0 , 23 ,0);
+    }
+    @include bp2 {
+      width: vw(bp2, 25);
+      height:vw(bp2, 4);
+      margin: vw(bp2, 14, 0 , 23, 0);
+    }
+  }//sep
+  p {
+    font-family: $FS-R;
+    font-size: vw(px, 16);
+    letter-spacing: vw(px, .25);
+    line-height: vw(px, 24);
+
+    @include bp1 {
+      font-size: vw(bp1, 16);
+      letter-spacing: vw(bp1, .25);
+      line-height: vw(bp1, 24);
+    }
+    @include bp2 {
+      font-size: vw(bp2, 16);
+      letter-spacing: vw(bp2, .25);
+      line-height: vw(bp2, 24);
+    }
+
+  }//p
+}
